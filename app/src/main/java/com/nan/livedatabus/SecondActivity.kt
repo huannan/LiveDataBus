@@ -12,15 +12,15 @@ class SecondActivity : AppCompatActivity() {
         /**
          * 非黏性接收
          */
-        LiveDataBus.with("key", Int::class.java)
+        LiveDataBus.with("event_name", Int::class.java)
                 .observe(this) {
                     Toast.makeText(this, "normal: $it", Toast.LENGTH_SHORT).show()
                 }
 
         /**
-         * 非黏接收
+         * 黏性接收
          */
-        LiveDataBus.with("key", Int::class.java)
+        LiveDataBus.with("event_name", Int::class.java)
                 .observe(this, true) {
                     Toast.makeText(this, "sticky: $it", Toast.LENGTH_SHORT).show()
                 }

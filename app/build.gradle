@@ -26,7 +26,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation project(path: ':livedatabus')
+    // implementation project(path: ':livedatabus')
+    implementation 'com.github.huannan:LiveDataBus:1.0.0'
     implementation("org.jetbrains.kotlin:kotlin-stdlib:$build_versions.kotlin")
     implementation("androidx.core:core-ktx:$versions.androidx_core_ktx")
     implementation("androidx.appcompat:appcompat:$versions.androidx_appcompat")

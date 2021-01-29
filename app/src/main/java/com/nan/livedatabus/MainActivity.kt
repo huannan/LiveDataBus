@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     fun send(view: View) {
         // 发送事件
-        LiveDataBus.post("key", 1)
+        LiveDataBus.post("event_name", 1)
     }
 
     fun jump(view: View) {
